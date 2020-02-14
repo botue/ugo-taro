@@ -9,31 +9,39 @@ export default class Search extends Component {
 
   constructor (props) {
     super(props)
-    this.goSearch = this.goSearch.bind(this)
-  }
 
+    // 绑定this的指向
+    this.goSearch = this.goSearch.bind(this)
+    this.cancelSearch = this.cancelSearch.bind(this)
+  }
+  
+  // 初始数据
   state = {
     focused: false,
     placeholder: ''
   }
   
   goSearch () {
+    // 更新数据
     this.setState({
       focused: true,
       placeholder: '请输入您想要的商品'
     })
-
+  
+    // 父子组件通信
     this.props.onSearch && this.props.onSearch({
-      pageHeight: Taro.getSystemInfoSync().windowHeight + 'px'
+      pageHeight: '200px'
     })
   }
 
   cancelSearch () {
+    // 更新数据
     this.setState({
       focused: false,
       placeholder: ''
     })
-
+  
+    // 父子组件通信
     this.props.onSearch && this.props.onSearch({
       pageHeight: 'auto'
     })
@@ -45,6 +53,7 @@ export default class Search extends Component {
         {/* 输入框 */}
         <View className="input-wrap">
           <Input
+            className="input"
             onFocus={this.goSearch}
             placeholder={this.state.placeholder} />
           <Text
@@ -55,43 +64,47 @@ export default class Search extends Component {
         <View className="content">
           <View className="title">搜索历史<Text className="clear"></Text></View>
           <View className="history">
-            <Navigator url="">小米</Navigator>
-            <Navigator url="">智能电视</Navigator>
-            <Navigator url="">小米空气净化器</Navigator>
-            <Navigator url="">西门子洗碗机</Navigator>
-            <Navigator url="">华为手机</Navigator>
-            <Navigator url="">苹果</Navigator>
-            <Navigator url="">锤子</Navigator>
+            <Navigator className="navigator" url="">小米</Navigator>
+            <Navigator className="navigator" url="">智能电视</Navigator>
+            <Navigator className="navigator" url="">小米空气净化器</Navigator>
+            <Navigator className="navigator" url="">西门子洗碗机</Navigator>
+            <Navigator className="navigator" url="">华为手机</Navigator>
+            <Navigator className="navigator" url="">苹果</Navigator>
+            <Navigator className="navigator" url="">锤子</Navigator>
           </View>
           {/* 结果 */}
           <View className="result">
-            <ScrollView scrollY>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
-              <Navigator url="">小米</Navigator>
+            <ScrollView
+              className="scroll-view"
+              scrollY>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
+              <Navigator className="navigator" url="">小米</Navigator>
             </ScrollView>
           </View>
         </View>

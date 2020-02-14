@@ -1,3 +1,4 @@
+
 .search {
   display: flex;
   flex-direction: column;
@@ -5,59 +6,59 @@
   // 搜索框
   .input-wrap {
     display: flex;
-    height: 100rpx;
-    padding: 20rpx;
+    height: 100px;
+    padding: 20px;
     background-color: #ea4451;
     box-sizing: border-box;
     position: relative;
 
     &::before,
     &::after {
-      height: 44rpx;
+      height: 44px;
       line-height: 1;
       background-image: url(https://static.botue.com/ugo/images/icon_search%402x.png);
-      background-size: 32rpx;
-      background-position: 6rpx center;
+      background-size: 32px;
+      background-position: 6px center;
       background-repeat: no-repeat;
       position: absolute;
-      top: 28rpx;
+      top: 28px;
       z-index: 9;
     }
 
     &::before {
       content: '搜索';
       display: block;
-      width: 100rpx;
-      padding: 11rpx 0 10rpx 44rpx;
+      // width: 100px;
+      padding: 11px 0 10px 44px;
       box-sizing: border-box;
       color: #666;
-      font-size: 24rpx;
-      left: 325rpx;
+      font-size: 24px;
+      left: 325px;
     }
 
     &::after {
       display: none;
       content: '';
-      width: 44rpx;
-      left: 40rpx;
+      width: 44px;
+      left: 40px;
     }
 
-    input {
+    .input {
       flex: 1;
-      height: 60rpx;
-      padding: 0 20rpx 0 64rpx;
+      height: 60px;
+      padding: 0 20px 0 64px;
       background-color: #fff;
-      border-radius: 8rpx;
-      font-size: 24rpx;
+      border-radius: 8px;
+      font-size: 24px;
       color: #666;
     }
 
     .cancel {
       display: none;
-      width: 80rpx;
+      width: 80px;
       text-align: right;
-      line-height: 60rpx;
-      font-size: 27rpx;
+      line-height: 60px;
+      font-size: 27px;
       color: #666;
     }
   }
@@ -66,42 +67,42 @@
   .content {
     display: none;
     flex: 1;
-    padding: 27rpx;
+    padding: 27px;
     background-color: #fff;
     position: relative;
 
     .title {
-      font-size: 27rpx;
+      font-size: 27px;
       line-height: 1;
       color: #333;
     }
 
     .clear {
       display: block;
-      width: 27rpx;
-      height: 27rpx;
+      width: 27px;
+      height: 27px;
       float: right;
       background-image: url(https://static.botue.com/ugo/images/clear.png);
       background-size: cover;
     }
 
     .history {
-      padding-top: 30rpx;
+      padding-top: 30px;
 
-      navigator {
+      .navigator {
         display: inline-block;
         line-height: 1;
-        padding: 15rpx 20rpx 12rpx;
+        padding: 15px 20px 12px;
         background-color: #ddd;
-        font-size: 24rpx;
-        margin-right: 20rpx;
-        margin-bottom: 15rpx;
+        font-size: 24px;
+        margin-right: 20px;
+        margin-bottom: 15px;
         color: #333;
       }
     }
 
     .result {
-      display: none;
+      // display: none;
       position: absolute;
       left: 0;
       right: 0;
@@ -109,14 +110,14 @@
       bottom: 0;
       background-color: #fff;
 
-      scroll-view {
+      .scroll-view {
         height: 100%;
       }
 
-      navigator {
+      .navigator {
         line-height: 1;
-        padding: 20rpx 30rpx;
-        font-size: 24rpx;
+        padding: 20px 30px;
+        font-size: 24px;
         color: #666;
         border-bottom: 1px solid #eee;
 

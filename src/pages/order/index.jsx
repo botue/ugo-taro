@@ -30,13 +30,13 @@ export default class Order extends Component {
       <View className="wrapper">
         {/* 订单状态 */}
         <View className="tabs">
-          <Text className="active">全部</Text>
-          <Text>待付款</Text>
-          <Text>已付款</Text>
-          <Text>退款/退货</Text>
+          <Text className="text active">全部</Text>
+          <Text className="text">待付款</Text>
+          <Text className="text">已付款</Text>
+          <Text className="text">退款/退货</Text>
         </View>
         {/* 订单 */}
-        <ScrollView className="orders" scroll-y>
+        <ScrollView className="orders" scrollY>
           <View className="item">
             {/* 商品图片 */}
             <Image className="pic" src="http://static.botue.com/ugo/uploads/goods_1.jpg"></Image>
@@ -44,7 +44,9 @@ export default class Order extends Component {
             <View className="meta">
               <View className="name">【海外购自营】黎珐(ReFa) MTG日本 CARAT铂金微电流瘦脸瘦身提拉紧致V脸美容仪 【保税仓发货】</View>
               <View className="price">
-                <Text>￥</Text>1399<Text>.00</Text>
+                <Text className="text">￥</Text>
+                1399
+                <Text className="text">.00</Text>
               </View>
               <View className="num">x1</View>
             </View>
@@ -65,7 +67,9 @@ export default class Order extends Component {
             <View className="meta">
               <View className="name">【海外购自营】黎珐(ReFa) MTG日本 CARAT铂金微电流瘦脸瘦身提拉紧致V脸美容仪 【保税仓发货】</View>
               <View className="price">
-                <Text>￥</Text>1399<Text>.00</Text>
+                <Text className="text">￥</Text>
+                1399
+                <Text className="text">.00</Text>
               </View>
               <View className="num">x1</View>
             </View>
@@ -86,7 +90,9 @@ export default class Order extends Component {
             <View className="meta">
               <View className="name">【海外购自营】黎珐(ReFa) MTG日本 CARAT铂金微电流瘦脸瘦身提拉紧致V脸美容仪 【保税仓发货】</View>
               <View className="price">
-                <Text>￥</Text>1399<Text>.00</Text>
+                <Text className="text">￥</Text>
+                1399
+                <Text className="text">.00</Text>
               </View>
               <View className="num">x1</View>
             </View>
@@ -107,7 +113,9 @@ export default class Order extends Component {
             <View className="meta">
               <View className="name">【海外购自营】黎珐(ReFa) MTG日本 CARAT铂金微电流瘦脸瘦身提拉紧致V脸美容仪 【保税仓发货】</View>
               <View className="price">
-                <Text>￥</Text>1399<Text>.00</Text>
+                <Text className="text">￥</Text>
+                1399
+                <Text className="text">.00</Text>
               </View>
               <View className="num">x1</View>
             </View>
@@ -121,6 +129,8 @@ export default class Order extends Component {
               <Button size="mini" type="primary">支付</Button>
             </View>
           </View>
+          {/* 加载更多 */}
+          <View className="getMore">正在加载...</View>
         </ScrollView>
       </View>
     )

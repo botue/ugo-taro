@@ -1,6 +1,12 @@
 import Taro, { Component } from '@tarojs/taro'
 
-import { View, Image, Text, Navigator, ScrollView } from '@tarojs/components'
+import {
+  View,
+  Image,
+  Text,
+  Navigator,
+  ScrollView
+} from '@tarojs/components'
 
 import './index.scss'
 
@@ -20,7 +26,7 @@ export default class Category extends Component {
         <View className="category">
           {/* 顶级分类 */}
           <View className="sup">
-            <ScrollView scrollY>
+            <ScrollView className="scroll-view" scrollY>
               <Text className="list active">大家电</Text>
               <Text className="list">热门推荐</Text>
               <Text className="list">海外购</Text>
@@ -35,44 +41,76 @@ export default class Category extends Component {
           </View>
           {/* 子级分类 */}
           <View className="sub">
-            <ScrollView scrollY>
+            <ScrollView className="scroll-view" scrollY>
               {/* 封面图 */}
-              <Image src="/static/uploads/category.png" className="thumb"></Image>
+              <Image src="https://static.botue.com/ugo/uploads/category.png" className="thumb"></Image>
               <View className="children">
                 <View className="title">电视</View>
                 {/* 品牌 */}
                 <View className="brands">
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_1.jpg"></Image>
-                    <Text>曲面电视</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_1.jpg"></Image>
+                    <Text className="text">曲面电视</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_2.jpg"></Image>
-                    <Text>海信</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_2.jpg"></Image>
+                    <Text className="text">海信</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_3.jpg"></Image>
-                    <Text>创维</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_3.jpg"></Image>
+                    <Text className="text">创维</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_4.jpg"></Image>
-                    <Text>夏普</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_4.jpg"></Image>
+                    <Text className="text">夏普</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_5.jpg"></Image>
-                    <Text>TCL</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_5.jpg"></Image>
+                    <Text className="text">TCL</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_6.jpg"></Image>
-                    <Text>PPTV</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_6.jpg"></Image>
+                    <Text className="text">PPTV</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_7.jpg"></Image>
-                    <Text>小米</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_7.jpg"></Image>
+                    <Text className="text">小米</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_8.jpg"></Image>
-                    <Text>长虹</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_8.jpg"></Image>
+                    <Text className="text">长虹</Text>
                   </Navigator>
                 </View>
               </View>
@@ -80,75 +118,69 @@ export default class Category extends Component {
                 <View className="title">电视</View>
                 {/* 品牌 */}
                 <View className="brands">
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_1.jpg"></Image>
-                    <Text>曲面电视</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_1.jpg"></Image>
+                    <Text className="text">曲面电视</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_2.jpg"></Image>
-                    <Text>海信</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_2.jpg"></Image>
+                    <Text className="text">海信</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_3.jpg"></Image>
-                    <Text>创维</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_3.jpg"></Image>
+                    <Text className="text">创维</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_4.jpg"></Image>
-                    <Text>夏普</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_4.jpg"></Image>
+                    <Text className="text">夏普</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_5.jpg"></Image>
-                    <Text>TCL</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_5.jpg"></Image>
+                    <Text className="text">TCL</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_6.jpg"></Image>
-                    <Text>PPTV</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_6.jpg"></Image>
+                    <Text className="text">PPTV</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_7.jpg"></Image>
-                    <Text>小米</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_7.jpg"></Image>
+                    <Text className="text">小米</Text>
                   </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_8.jpg"></Image>
-                    <Text>长虹</Text>
-                  </Navigator>
-                </View>
-              </View>
-              <View className="children">
-                <View className="title">电视</View>
-                {/* 品牌 */}
-                <View className="brands">
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_1.jpg"></Image>
-                    <Text>曲面电视</Text>
-                  </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_2.jpg"></Image>
-                    <Text>海信</Text>
-                  </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_3.jpg"></Image>
-                    <Text>创维</Text>
-                  </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_4.jpg"></Image>
-                    <Text>夏普</Text>
-                  </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_5.jpg"></Image>
-                    <Text>TCL</Text>
-                  </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_6.jpg"></Image>
-                    <Text>PPTV</Text>
-                  </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_7.jpg"></Image>
-                    <Text>小米</Text>
-                  </Navigator>
-                  <Navigator url="/pages/list">
-                    <Image src="/static/uploads/brand_8.jpg"></Image>
-                    <Text>长虹</Text>
+                  <Navigator
+                    className="navigator"
+                    url="/pages/list/index">
+                    <Image
+                      className="image"
+                      src="https://static.botue.com/ugo/uploads/brand_8.jpg"></Image>
+                    <Text className="text">长虹</Text>
                   </Navigator>
                 </View>
               </View>

@@ -1,5 +1,5 @@
 {
-	"miniprogramRoot": "dist/",
+	"miniprogramRoot": "dist/weapp/",
 	"projectname": "ugo-taro",
 	"description": "黑马优购小程序!",
 	"appid": "wx88efc5bd3db8d0ed",

@@ -1,6 +1,14 @@
 import Taro, { Component } from '@tarojs/taro'
 
-import { View, Text, Label, Input, Navigator, Icon, Image } from '@tarojs/components'
+import {
+  View,
+  Text,
+  Label,
+  Input,
+  Navigator,
+  Icon,
+  Image
+} from '@tarojs/components'
 
 import './index.scss'
 
@@ -30,20 +38,20 @@ export default class Cart extends Component {
             <View className="shopname">优购生活馆</View>
             <View className="goods">
               {/* 商品图片 */}
-              <Navigator url="/pages/goods">
-                <Image className="pic" src="/static/uploads/goods_1.jpg"></Image>
+              <Navigator url="/pages/goods/index">
+                <Image className="pic" src="https://static.botue.com/ugo/uploads/goods_1.jpg"></Image>
               </Navigator>
               {/* 商品信息 */}
               <View className="meta">
                 <View className="name">【海外购自营】黎珐(ReFa) MTG日本 CARAT铂金微电流瘦脸瘦身提拉紧致V脸美容仪 【保税仓发货】</View>
                 <View className="price">
-                  <Label>￥</Label>1399<Text>.00</Text>
+                  <Label className="label">￥</Label>1399<Label>.00</Label>
                 </View>
                 {/* 加减 */}
                 <View className="amount">
-                  <Label className="reduce">-</Label>
-                  <Input type="number" value="1" className="number" />
-                  <Label className="plus">+</Label>
+                  <Label className="label">-</Label>
+                  <Input type="number" value="1" className="input" />
+                  <Label className="label">+</Label>
                 </View>
               </View>
               {/* 选框 */}
@@ -53,20 +61,22 @@ export default class Cart extends Component {
             </View>
             <View className="goods">
               {/* 商品图片 */}
-              <Navigator url="/pages/goods">
-                <Image className="pic" src="/static/uploads/goods_2.jpg"></Image>
+              <Navigator url="/pages/goods/index">
+                <Image className="pic" src="https://static.botue.com/ugo/uploads/goods_2.jpg"></Image>
               </Navigator>
               {/* 商品信息 */}
               <View className="meta">
                 <View className="name">【海外购自营】黎珐(ReFa) MTG日本 CARAT铂金微电流瘦脸瘦身提拉紧致V脸美容仪 【保税仓发货】</View>
                 <View className="price">
-                  <Label>￥</Label>1399<Text>.00</Text>
+                  <Label className="label">￥</Label>
+                  1399
+                  <Label className="label">.00</Label>
                 </View>
                 {/* 加减 */}
                 <View className="amount">
-                  <Label className="reduce">-</Label>
-                  <Input type="number" value="1" className="number" />
-                  <Label className="plus">+</Label>
+                  <Label className="label">-</Label>
+                  <Input type="number" value="1" className="input" />
+                  <Label className="label">+</Label>
                 </View>
               </View>
               {/* 选框 */}
@@ -76,20 +86,22 @@ export default class Cart extends Component {
             </View>
             <View className="goods">
               {/* 商品图片 */}
-              <Navigator url="/pages/goods">
-                <Image className="pic" src="/static/uploads/goods_5.jpg"></Image>
+              <Navigator url="/pages/goods/index">
+                <Image className="pic" src="https://static.botue.com/ugo/uploads/goods_5.jpg"></Image>
               </Navigator>
               {/* 商品信息 */}
               <View className="meta">
                 <View className="name">【海外购自营】黎珐(ReFa) MTG日本 CARAT铂金微电流瘦脸瘦身提拉紧致V脸美容仪 【保税仓发货】</View>
                 <View className="price">
-                  <Label>￥</Label>1399<Text>.00</Text>
+                  <Label className="label">￥</Label>
+                  1399
+                  <Label className="label">.00</Label>
                 </View>
                 {/* 加减 */}
                 <View className="amount">
-                  <label className="reduce">-</label>
-                  <Input type="number" value="1" className="number" />
-                  <label className="plus">+</label>
+                  <label className="label">-</label>
+                  <Input type="number" value="1" className="input" />
+                  <label className="label">+</label>
                 </View>
               </View>
               {/* 选框 */}
@@ -102,11 +114,14 @@ export default class Cart extends Component {
         {/* 其它 */}
         <View className="extra">
           <Label className="checkall">
-            <Icon type="success" color="#ccc" size="20"></Icon>
+            <Icon className="icon" type="success" color="#ccc" size="20"></Icon>
             全选
           </Label>
           <View className="total">
-            合计: <Label>￥</Label><Label className="num">14110</Label><Label>.00</Label>
+            合计: 
+            <Label className="label">￥</Label>
+            <Label className="lable num">14110</Label>
+            <Label className="label">.00</Label>
           </View>
           <View className="pay">结算(3)</View>
         </View>

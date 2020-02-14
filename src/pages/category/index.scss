@@ -1,4 +1,12 @@
-scroll-view {
+
+/*  #ifdef  h5  */
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+/*  #endif  */
+
+.scroll-view {
   height: 100%;
 }
 
@@ -6,21 +14,21 @@ scroll-view {
   display: flex;
   width: 100%;
   position: absolute;
-  top: 100rpx;
+  top: 100px;
   bottom: 0;
 
   .sup {
-    width: 196rpx;
+    width: 196px;
     background-color: #f4f4f4;
 
     .list {
       display: block;
-      height: 100rpx;
+      height: 100px;
       text-align: center;
-      line-height: 100rpx;
-      font-size: 27rpx;
+      line-height: 100px;
+      font-size: 27px;
       color: #333;
-      border-bottom: 1rpx solid #eee;
+      border-bottom: 1px solid #eee;
 
       &:last-child {
         border-bottom: none;
@@ -34,8 +42,8 @@ scroll-view {
         &::before {
           content: '';
           display: block;
-          width: 8rpx;
-          height: 60rpx;
+          width: 8px;
+          height: 60px;
           transform: translateY(-50%);
           background-color: #ea4451;
 
@@ -49,11 +57,11 @@ scroll-view {
 
   .sub {
     flex: 1;
-    padding: 20rpx 18rpx;
+    padding: 20px 18px;
 
     .thumb {
       width: 100%;
-      height: 180rpx;
+      height: 180px;
     }
 
     .children {
@@ -62,18 +70,18 @@ scroll-view {
 
       .title {
         display: inline-block;
-        margin: 40rpx 0 20rpx;
-        font-size: 30rpx;
+        margin: 40px 0 20px;
+        font-size: 30px;
 
         &::before {
           content: '/';
-          margin-right: 20rpx;
+          margin-right: 20px;
           color: #666;
         }
 
         &::after {
           content: '/';
-          margin-left: 20rpx;
+          margin-left: 20px;
           color: #666;
         }
       }
@@ -83,19 +91,19 @@ scroll-view {
       display: flex;
       flex-wrap: wrap;
 
-      navigator {
+      .navigator {
         width: 33%;
-        margin-bottom: 20rpx;
+        margin-bottom: 20px;
       }
 
-      image {
-        width: 120rpx;
-        height: 120rpx;
+      .image {
+        width: 120px;
+        height: 120px;
       }
 
-      text {
+      .text {
         display: block;
-        font-size: 24rpx;
+        font-size: 24px;
       }
     }
   }

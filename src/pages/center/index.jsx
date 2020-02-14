@@ -1,5 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Image, Button } from '@tarojs/components'
+import {
+  View,
+  Text,
+  Image,
+  Button
+} from '@tarojs/components'
 
 import './index.scss'
 
@@ -22,16 +27,16 @@ export default class Center extends Component {
         {/* 统计 */}
         <View className="count">
           <View className="cell">
-            8 <Text>收藏的店铺</Text>
+            8 <Text className="text">收藏的店铺</Text>
           </View>
           <View className="cell">
-            14 <Text>收藏的商品</Text>
+            14 <Text className="text">收藏的商品</Text>
           </View>
           <View className="cell">
-            18 <Text>关注的商品</Text>
+            18 <Text className="text">关注的商品</Text>
           </View>
           <View className="cell">
-            84 <Text>我的足迹</Text>
+            84 <Text className="text">我的足迹</Text>
           </View>
         </View>
         {/* 我的订单 */}
@@ -51,7 +56,7 @@ export default class Center extends Component {
         {/* 其它 */}
         <View className="extra">
           <View className="item icon-arrow">联系客服</View>
-          <Button className="item icon-arrow">意见反馈</Button>
+          <Button className="button item icon-arrow">意见反馈</Button>
         </View>
       </View>
     )
