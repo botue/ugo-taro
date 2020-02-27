@@ -50,7 +50,7 @@
   .goods {
     display: flex;
     padding: 30px 20px 30px 0;
-    margin-left: 100px;
+    margin-left: 105px;
     border-bottom: 1px solid #eee;
     background-color: #fff;
 
@@ -94,7 +94,9 @@
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-line-clamp: 2;
+      /* ! autoprefixer: off */
       -webkit-box-orient: vertical;
+      /* autoprefixer: on */
     }
 
     .price {
