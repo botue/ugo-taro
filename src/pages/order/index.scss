@@ -23,13 +23,13 @@
   position: absolute;
   top: 97px;
   bottom: 0;
-  background-color: #fff;
 }
 
 .item {
   padding: 30px 20px 0;
   margin-top: 16px;
   background-color: #fff;
+  margin-bottom: 20rpx;
   
   &:last-child {
     margin-bottom: 50px;
@@ -63,7 +63,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     
     /* ! autoprefixer: off */
     -webkit-box-orient: vertical;
