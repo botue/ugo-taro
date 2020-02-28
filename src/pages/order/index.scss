@@ -23,12 +23,17 @@
   position: absolute;
   top: 97px;
   bottom: 0;
+  background-color: #fff;
 }
 
 .item {
   padding: 30px 20px 0;
   margin-top: 16px;
   background-color: #fff;
+  
+  &:last-child {
+    margin-bottom: 50px;
+  }
 
   .pic {
     width: 200px;
