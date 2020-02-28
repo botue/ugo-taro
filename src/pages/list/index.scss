@@ -51,8 +51,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
+    /* ! autoprefixer: off */
     -webkit-box-orient: vertical;
+    /* autoprefixer: on */
   }
 
   .price {
