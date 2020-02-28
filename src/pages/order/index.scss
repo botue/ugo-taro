@@ -34,6 +34,15 @@
   &:last-child {
     margin-bottom: 50px;
   }
+  
+  .goods {
+    padding: 20rpx 0;
+    border-top: 1rpx solid #eee;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
 
   .pic {
     width: 200px;
