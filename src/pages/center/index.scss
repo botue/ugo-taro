@@ -16,10 +16,12 @@
   .meta {
 
     .avatar {
+      display: block;
       width: 140px;
       height: 140px;
       border-radius: 50%;
       border: 2px solid #fff;
+      overflow: hidden;
     }
 
     .nickname {
